@@ -11,6 +11,7 @@ def home_page():
 
 @app.route('/zirtue_forwarding_test')
 def zirtue_forwarding_page():
+    #https://werkzeug.palletsprojects.com/en/1.0.x/utils/#module-werkzeug.useragents
     return render_template("zirtue_forwarding_test.html")
 
 #TODO: include a 404 page
