@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 
 application = Flask(__name__)
-app = application
+app = application #required for Elastic Beanstalk to run
 
 @app.route('/')
 @app.route('/home')
