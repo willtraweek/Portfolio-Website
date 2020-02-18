@@ -1,9 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app = application
 
 @app.route('/')
+@app.route('/home')
+@app.route('/index')
 def home_page():
     return render_template("homepage.html")
 
