@@ -3,10 +3,10 @@
 <head>
     {% if request.user_agent.platform == "iphone" %}
         <meta http-equiv="refresh" content="0; url=https://apps.apple.com/us/app/zirtue-lend-borrow-money/id1414766636">
-    {% elif request.user_agent.platform == "macos"%}
-        <meta http-equiv="refresh" content="0; url=https://zirtue.com/">
     {% elif request.user_agent.platform == "android" %}
         <meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.zirtue.app&hl=en_US">
+    {% else %}
+        <meta http-equiv="refresh" content="0; url=https://zirtue.com/">
     {% endif %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <title>Zirtue Forwarding Test</title>
